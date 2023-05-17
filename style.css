@@ -1,0 +1,362 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.flotar {
+    float: left;
+}
+.pad {
+    padding: 10px;
+}
+header {
+    width: 100%;
+    height: 180px;
+    background-color: tomato;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color: tomato;
+    z-index: 5;
+}
+main {
+    width: 100%;
+    background-color: rgb(73, 168, 199);
+}
+section {
+    background-color: rgb(98, 153, 153);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+section div {
+    background-color: silver;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#skills div{
+    overflow: auto;
+    white-space: nowrap;
+    scroll-behavior: inherit;
+}
+
+#skills span{
+    padding:5px;
+    margin:auto 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius:5px;
+    box-shadow: 0 0 4px blue;
+    background-color:rgb(231, 231, 123);
+}
+
+.about-img {
+    width: 500px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    justify-content: center;
+}
+
+#contacts a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.contact-div {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(87, 86, 86);
+    color: #fff;
+}
+footer section {
+    margin: 20px;
+    border-radius: 20px;
+    background-color: gray;
+    padding: 20px;
+}
+/* ============================================================================================ */
+/* Header decoration */
+.logo-area {
+    height: 100%;
+    width: 15%;
+    float: left;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+   width: 85%;
+    height: 60%;
+    font-size: 80px;
+    text-align: center;
+    float: left;
+}
+
+/* -------------------------------- */
+/* .navbar {
+    width: 85%;
+    float: left;
+} */
+.navs-btn {
+    width: -moz-fit-content;
+    width: fit-content;
+    float: right;
+}
+.navs-btn li {
+    display: inline-block;
+    list-style: none;
+    padding: 17px 8px;
+    margin-right: 20px;
+}
+.navs-btn a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #5120cf;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.navs-btn a:hover {
+    background-color: #fff;
+    color: #5120cf;
+}
+/* ================================================= */
+/* Responsive Design */
+
+@media screen and (max-width: 1166px) {
+    
+    .navs-btn a {
+        font-size: 25px;
+        width: 25px;
+    }
+    .navs-area {
+        padding-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 100%;
+        height: 150px;
+    }
+    .name {
+        font-size: 60px;
+    }
+    .navs-area {
+        padding-bottom: 10px;
+    }
+    .navs-btn li {
+        padding: 15px 5px;
+
+    }
+    .navs-btn a {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 916px) {
+    .name {
+        font-size: 60px;
+    }
+    .navs-area {
+        padding-bottom: 10px;
+    }
+    .navs-btn li {
+        padding: 15px 5px;
+    }
+    .navs-btn a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 110px;
+    }
+    .name {
+        font-size: 50px;
+        height: 50%;
+    }
+    #navs-area {
+        width: 100%;
+    }
+    .flotar {
+        float: none;
+    }
+    main {
+        width: 100%;
+        background-color: rgb(114, 114, 69);
+    }
+}
+
+@media screen and (max-width: 710px) {
+    header {
+        /* width: 100%; */
+        height: 130px;
+        padding-bottom: 5px;
+    }
+    .logo-area {
+        height: 60%;
+    }
+    .logo {
+        height: 100%;
+        border-radius: 50%;
+        margin: 10px 0 0 10px;
+    }
+    .name {
+        font-size: 40px;
+        height: 60%;
+        font-size: 50px;
+        float: left;
+    }
+    .about-img {
+        width: 100%;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .navs-btn {
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+    .navs-btn li {
+        /* float: right; */
+        margin-right: 20px;
+    }
+    .flotar {
+        float: none;
+    }
+    main {
+        width: 100%;
+        background-color: rgb(77, 171, 149);
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .navs-btn {
+        padding: 0;
+    }
+    .navs-btn li {
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    header {
+        height: 150px;
+    }
+    .sticky {
+        padding-bottom: 5px;
+    }
+   .name {
+         font-size: 35px;
+         padding-left: 0;
+         padding-top: 18px;
+         text-align: center;
+         height: 60%;
+         width: 70%;
+         margin-bottom: 0;
+   }
+   .about-img {
+         width: 100%;
+         border-radius: 20px;
+         margin: 0 auto;
+         margin-top: 20px;
+         display: block;
+         justify-content: center;
+    }
+    .navs-btn {
+         width: -moz-fit-content;
+         width: fit-content;
+         margin-right: 5px;
+         margin-top: 20px;
+    }
+    .navs-btn li {
+         padding: 0 5px;
+         margin-bottom: 12px;
+    }
+    .navs-btn a {
+        font-size: 20px;
+         padding: 5px 5px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #navs-area {
+        width: 100%;
+    }
+    .navs-btn {
+        width: 100%;
+    }
+    .navs-btn li {
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 347px){
+    header {
+        height: 180px;
+    }
+    .logo-area {
+        width: 20%;
+        height: 40%;
+    }
+    .name {
+        font-size: 25px;
+        padding-left: 0;
+        padding-top: 20px;
+        text-align: center;
+        width: 80%;
+        height: 40%;
+    }
+    
+    .navbar .navs-btn {
+        width: 100%;
+        height: 70%;
+        padding: 0;
+        margin: 0;
+    }
+    .navs-btn li {
+        padding: 0;
+        width: 80%;
+        display: block;
+        margin: 0 10%;
+    }
+    .navs-btn li a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 2px;
+        margin: 2px;
+    }
+    span {
+        padding: 5px;
+        font-size: 1px;
+        
+    }
+}
+
+
+@media screen and (max-width: 160px) {
+    * {
+        display: none;
+    }
+}
