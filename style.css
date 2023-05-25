@@ -1,4 +1,5 @@
 
+/* Global start */
 * {
     margin: 0;
     padding: 0;
@@ -8,54 +9,43 @@
 .flotar {
     float: left;
 }
+
 .pad {
     padding: 10px;
 }
+.font {
+    font-size: 25px;
+}
+
 header {
     width: 100%;
     height: 180px;
-    background-color: tomato;
+    background-color: rgb(143, 214, 107);
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    background-color: tomato;
-    z-index: 5;
-}
+
+
+
 main {
     width: 100%;
-    background-color: rgb(73, 168, 199);
+    background-color: rgb(118, 191, 215);
+}
+.main {
+    margin-top: 100px;
 }
 section {
-    background-color: rgb(98, 153, 153);
+    background-color: rgb(171, 216, 216);
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
 }
+
 section div {
-    background-color: silver;
+    background-color: rgb(125, 167, 244);
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
 }
-
-#skills div{
-    overflow: auto;
-    white-space: nowrap;
-    scroll-behavior: inherit;
-}
-
-#skills span{
-    padding:5px;
-    margin:auto 10px;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius:5px;
-    box-shadow: 0 0 4px blue;
-    background-color:rgb(231, 231, 123);
-}
-
-.about-img {
+.sec1 img {
     width: 500px;
     border-radius: 20px;
     margin: 0 auto;
@@ -64,12 +54,29 @@ section div {
     justify-content: center;
 }
 
-#contacts a img {
+.sec3 div {
+    overflow: auto;
+    white-space: nowrap;
+    scroll-behavior: inherit;
+}
+
+.sec3 span {
+    padding: 5px;
+    margin: auto 10px;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(131, 245, 131);
+}
+
+
+.sec4 a img {
     width: 50px;
     height: 50px;
     border-radius: 10px;
     margin: 10px;
 }
+
 .contact-div {
     margin: 0;
     padding: 0;
@@ -77,15 +84,22 @@ section div {
 
 footer {
     width: 100%;
-    background-color: rgb(87, 86, 86);
+    background-color: gray;
     color: #fff;
 }
+
 footer section {
     margin: 20px;
     border-radius: 20px;
-    background-color: gray;
+    background-color: rgb(86, 85, 85);
     padding: 20px;
 }
+footer h2::first-letter {
+    color: red;
+    font-size: 1.5em;
+    font-style: italic;
+}
+/* Gloabal end */
 /* ============================================================================================ */
 /* Header decoration */
 .logo-area {
@@ -93,35 +107,40 @@ footer section {
     width: 15%;
     float: left;
 }
+
 .logo {
     width: 100%;
     height: 100%;
 }
 
 .name {
-   width: 85%;
+    width: 85%;
     height: 60%;
     font-size: 80px;
     text-align: center;
-    float: left;
+    float: right;
 }
 
 /* -------------------------------- */
-/* .navbar {
+.navbar {
     width: 85%;
-    float: left;
-} */
+    height: 40%;
+    float: right;
+}
+
 .navs-btn {
     width: -moz-fit-content;
     width: fit-content;
+    height: 100%;
     float: right;
+    margin-right: 3%;
+    padding: 6px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.navs-btn li {
-    display: inline-block;
-    list-style: none;
-    padding: 17px 8px;
-    margin-right: 20px;
-}
+
+
 .navs-btn a {
     font-weight: bold;
     text-decoration: none;
@@ -129,234 +148,625 @@ footer section {
     background-color: #5120cf;
     font-size: 30px;
     padding: 10px;
+    margin: 0 20px;
     border-radius: 10px;
-
+    border: 0;
 }
+
 .navs-btn a:hover {
     background-color: #fff;
     color: #5120cf;
 }
+.sticky {
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    background-color: tomato;
+    margin: 0;
+    z-index: 5;
+}
+.sticky-padding {
+    padding-top: 100px;
+}
+.margin-top {
+    margin-top: 0;
+}
 /* ================================================= */
 /* Responsive Design */
-
-@media screen and (max-width: 1166px) {
+@media screen and (max-width:2000) {
     
-    .navs-btn a {
-        font-size: 25px;
-        width: 25px;
-    }
-    .navs-area {
-        padding-bottom: 10px;
+}
+@media screen and (max-width:1150px) {
+    header {
+        height: 160px;
     }
 }
-
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width:1000px) {
     header {
-        width: 100%;
         height: 150px;
     }
     .name {
-        font-size: 60px;
-    }
-    .navs-area {
-        padding-bottom: 10px;
-    }
-    .navs-btn li {
-        padding: 15px 5px;
-
-    }
-    .navs-btn a {
-        font-size: 20px;
+        font-size: 70px;
     }
 }
-@media screen and (max-width: 916px) {
+@media screen and (max-width:900px) {
+    header {
+        height: 140px;
+    }
+    .name {
+        font-size: 65px;
+        height: 60%;
+    }
+    .navs-btn a {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:800px) {
+    header {
+        height: 130px;
+    }
     .name {
         font-size: 60px;
     }
-    .navs-area {
-        padding-bottom: 10px;
-    }
-    .navs-btn li {
-        padding: 15px 5px;
-    }
     .navs-btn a {
-        font-size: 15px;
+        font-size: 25px;
     }
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width:750px) {
     header {
-        height: 110px;
+        height: 120px;
     }
     .name {
         font-size: 50px;
-        height: 50%;
+        height: 60%;
     }
-    #navs-area {
-        width: 100%;
-    }
-    .flotar {
-        float: none;
-    }
-    main {
-        width: 100%;
-        background-color: rgb(114, 114, 69);
+    .navs-btn a {
+        padding: 7px;
+        margin: 0 16px;
+        font-size: 23px;
     }
 }
 
-@media screen and (max-width: 710px) {
+
+@media screen and (max-width: 700px) {
+    .font {
+        font-size: 19px;
+    }
     header {
-        /* width: 100%; */
-        height: 130px;
-        padding-bottom: 5px;
+        height: 100px;
+    }
+    .logo-area {
+        height: 100%;
+        width: 15%;
+    }
+    .logo {
+        height: 100%;
+        width: 100%;
+    }
+    .name {
+        width: 80%;
+        font-size: 45px;
+        height: 60%;
+        float: left;
+    }
+    .navbar {
+        width: 85%;
+    }
+    
+    .navs-btn a {
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    section {
+        padding: 15px;
+        margin: 15px;
+        border-radius: 15px;
+    }
+    section div, footer section {
+        padding: 15px;
+        margin: 15px;
+        border-radius: 10px;
+    }
+    .sec1 img {
+        max-width: 100%;
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+    .sec4 a img {
+        height: 40px;
+        width: 40px;
+        margin: 8px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        height: 90px;
+    }
+    .name {
+        font-size: 40px;
+        height: 58%;
+    }
+    .navs-btn a {
+        font-size: 18px;
+    }
+    .sec3 span {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .font {
+        font-size: 18px;
+    }
+    header {
+        height: 80px;
+    }
+    .name {
+        font-size: 35px;
+        height: 60%;
+    }
+    .navs-btn a {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+}
+
+
+ @media screen and (max-width: 400px) {
+    .font {
+        font-size: 16px;
+    }
+    header {
+        height: 90px;
     }
     .logo-area {
         height: 60%;
+        margin: 5px 0 0 5px;
     }
     .logo {
         height: 100%;
         border-radius: 50%;
-        margin: 10px 0 0 10px;
     }
     .name {
-        font-size: 40px;
-        height: 60%;
-        font-size: 50px;
+        font-size: 30px;
+        height: 70%;
+        width: 70%;
         float: left;
-    }
-    .about-img {
-        width: 100%;
+        text-align: center;
+        margin-left: 4px;
     }
     .navbar {
+        height: 30%;
         width: 100%;
-    }
-    .navs-btn {
-        width: -moz-fit-content;
-        width: fit-content;
-    }
-    .navs-btn li {
-        /* float: right; */
-        margin-right: 20px;
-    }
-    .flotar {
-        float: none;
-    }
-    main {
-        width: 100%;
-        background-color: rgb(77, 171, 149);
-    }
-}
-
-@media screen and (max-width: 555px) {
-    .navs-btn {
+        margin: 0;
         padding: 0;
-    }
-    .navs-btn li {
-        float: left;
-        margin-right: 10px;
-    }
-}
-
-@media screen and (max-width: 515px) {
-    header {
-        height: 150px;
-    }
-    .sticky {
-        padding-bottom: 5px;
-    }
-   .name {
-         font-size: 35px;
-         padding-left: 0;
-         padding-top: 18px;
-         text-align: center;
-         height: 60%;
-         width: 70%;
-         margin-bottom: 0;
-   }
-   .about-img {
-         width: 100%;
-         border-radius: 20px;
-         margin: 0 auto;
-         margin-top: 20px;
-         display: block;
-         justify-content: center;
-    }
-    .navs-btn {
-         width: -moz-fit-content;
-         width: fit-content;
-         margin-right: 5px;
-         margin-top: 20px;
-    }
-    .navs-btn li {
-         padding: 0 5px;
-         margin-bottom: 12px;
-    }
-    .navs-btn a {
-        font-size: 20px;
-         padding: 5px 5px;
-    }
-}
-
-@media screen and (max-width:450px) {
-    #navs-area {
-        width: 100%;
+        float: right;
     }
     .navs-btn {
         width: 100%;
-    }
-    .navs-btn li {
         margin: 0;
     }
-}
-
-
-@media screen and (max-width: 347px){
-    header {
-        height: 180px;
+    
+    .navs-btn a {
+        font-size: 18px;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+        margin: 0 auto;
+        
     }
-    .logo-area {
-        width: 20%;
-        height: 40%;
+    section {
+        margin: 5px;
+        padding: 10px;
+    }
+    section div {
+        margin: 5px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .about-img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    .sec3 div {
+        border: 2px solid greenyellow;
+    }
+    .sec3 span {
+        font-size: 20px;
+    }
+    footer section {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    /* sticky area. Write above. */
+    .sticky {
+        height: -moz-fit-content;
+        height: fit-content;
+        padding: 0;
+    }
+    
+ }
+
+ @media screen and (max-width: 352px) {
+    .navs-btn a {
+        font-size: 12px;
+    }
+ }
+
+ @media screen and (max-width:336px) {
+    .font {
+        font-size: 16px;
     }
     .name {
         font-size: 25px;
-        padding-left: 0;
-        padding-top: 20px;
-        text-align: center;
+        padding-top: 12px;
+    }
+    .navs-btn a {
+        font-size: 10px;
+    }
+ }
+
+ @media screen and (max-width: 280px) {
+    header {
+        height: 80px;
+    }
+    .font {
+        font-size: 12px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .navs-btn a {
+        font-size: 9px;
+    }
+    .pad {
+        padding: 5px;
+    }
+    main section {
+        padding: 5px;
+    }
+    .sec3 span {
+        font-size: 13px;
+    }
+
+    .sec4 a img {
+        width: 25px;
+        height: 25px;
+    }
+ }
+
+ @media screen and (max-width: 250px) {
+    .pad {
+        padding: 3px;
+    }
+    .font {
+        font-size: 12px;
+    }
+    header {
+        height: 70px;
+    }
+    .logo-area {
+        height: 50%;
+    }
+    .name {
+        padding-top: 10px;
+        height: 50%;
+    }
+    .navs-btn {
+        padding: 0;
+    }
+    .navs-btn a {
+        font-size: 8px;
+    }
+    main, footer {
+        font-size: 10px;
+        background-color: lightseagreen;
+    }
+    .sec3 span {
+        font-size: 10px;
+    }
+    .sec4 a img {
+        width: 20px;
+        height: 20px;
+        border: 5px;
+        margin: 9px;
+        border-radius: 4px;
+    }
+    .sticky {
+        height: -moz-fit-content;
+        height: fit-content;
+        padding: 5px 0;
+    }
+ }
+
+ @media screen and (max-width: 235px) {
+    .font {
+        font-size: 8px;
+    }
+    .logo-area {
+        height: 50%;
+        margin-top: 0;
+    }
+    .name {
+        font-size: 17px;
+        height: 50%;
         width: 80%;
-        height: 40%;
+    }
+    .navbar {
+        height: 50%;
     }
     
-    .navbar .navs-btn {
-        width: 100%;
-        height: 70%;
-        padding: 0;
-        margin: 0;
+    .navs-btn a {
+        font-size: 8px;
     }
-    .navs-btn li {
-        padding: 0;
-        width: 80%;
-        display: block;
-        margin: 0 10%;
+    main, footer {
+        font-size: 7px;
     }
-    .navs-btn li a {
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding: 2px;
-        margin: 2px;
+    .sticky {
+        height: -moz-fit-content;
+        height: fit-content;
     }
-    span {
-        padding: 5px;
-        font-size: 1px;
+ }
+
+ @media screen and (max-width: 200px) {
+    .font {
+        font-size: 7px;
+    }
+    header {
+        height: 60px;
+    }
+    .logo-area {
+        height: 60%;
         
+    }
+    .name {
+        font-size: 14px;
+        width: 70%;
+    }
+    .navbar {
+        height: 40%;
+    }
+    .navs-btn a {
+        padding: 3px;
+        border-radius: 3px;
+    }
+    .pad {
+        padding: 1px;
+    }
+    main, footer {
+        font-size: 7px;
+    }
+    section {
+        border-radius: 10px;
+    }
+    .sec3 span {
+        font-size: 7px;
+        border: none;
+    }
+    .sticky {
+        height: -moz-fit-content;
+        height: fit-content;
+        padding: 3px ;
+    }
+ }
+
+
+@media screen and (max-width: 150px) {
+    .font {
+        font-size: 5px;
+    }
+    header {
+        min-height: 40px;
+    }
+    .logo-area {
+        margin-left: 2px;
+    }
+    .name {
+        font-size: 10px;
+    }
+    
+    .navs-btn a {
+        padding: 2px;
+        border-radius: 2px;
+    }
+    .sec1 img {
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .sec2 div {
+        border-radius: 5px;
+    }
+    .sec3 div {
+        padding: 4px;
+        margin: 3px;
+        border-radius: 4px;
+        border: 1px solid greenyellow;
+    }
+    .sec3 span {
+        padding: 3px;
+        margin: 3px;
+        border-radius: 2px;
+        font-size: 4px;
+    }
+    .sec4 div {
+        padding: 3px;
+        margin: 3px;
+        border-radius: 3px;
+    }
+    .sec4 a img {
+        width: 8px;
+        height: 8px;
+        margin: 1px;
+        border-radius: 2px;
+    }
+    footer section {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    
+}
+
+@media screen and (max-width:130px) {
+    .font {
+        font-size: 6px;
+    }
+    header {
+        height: 30px;
+    }
+    .name {
+        font-size: 9px;
+        padding-top: 5px;
+    }
+    .navs-btn a {
+        font-size: 5px;
+        padding: 2px;
+        border-radius: 2px;
+    }
+    .sec1 {
+        padding: 3px;
+        margin: 2px;
+        border-radius: 3px;
+    }
+    .sec1 img {
+        border-radius: 2px;
+    }
+    .sec2 {
+        padding: 3px;
+        margin: 2px;
+        border-radius: 3px;
+    }
+    .sec2 div {
+        border-radius: 2px;
+    }
+    .sec3 {
+        padding: 3px;
+        margin: 3px;
+        border-radius: 3px;
+    }
+    .sec3 div {
+        padding: 4px;
+        margin: 3px;
+        border-radius: 3px;
+        border: 1px solid greenyellow;
+    }
+    .sec3 span {
+        padding: 3px;
+        margin: 3px;
+        border-radius: 3px;
+        font-size: 5px;
+    }
+    .sec4 {
+        padding: 3px;
+        margin: 2px;
+        border-radius: 3px;
+    }
+    .sec4 div {
+        padding: 3px;
+        margin: 3px;
+        border-radiuss: 3px;
+    }
+    .sec4 a img {
+        width: 8px;
+        height: 8px;
+        margin: 1px;
+        border-radius: 4px;
+    }
+    footer section {
+        padding: 3px;
+        margin: 3px;
+        border-radius: 3px;
+    }
+    .sticky {
+        height: -moz-fit-content;
+        height: fit-content;
+        padding: 2px;
     }
 }
 
-
-@media screen and (max-width: 160px) {
-    * {
-        display: none;
+@media screen and (max-width:97px) {
+    .font {
+        font-size: 5px;
+    }
+    header {
+        height: 20px;
+    }
+    .logo-area {
+        height: 50%;
+        width: 20%;
+    }
+    .name {
+        font-size: 6px;
+        margin: 0;
+    }
+    .navs-btn a {
+        font-size: 4px;
+        padding: 1px;
+        border-radius: 1px;
+    }
+    .sec1 {
+        padding: 5px;
+        margin: 2px;
+        border-radius: 4px;
+    }
+    .sec1 img {
+        border-radius: 2px;
+    }
+    .sec2 {
+        padding: 5px;
+        margin: 2px;
+        border-radius: 4px;
+    }
+    .sec2 div {
+        padding: 5px;
+        margin: 2px;
+        border-radius: 4px;
+    }
+    .sec3 {
+        padding: 5px;
+        margin: 2px;
+        border-radius: 4px;
+    }
+    .sec3 div {
+        padding: 2px;
+        margin: 2px;
+        height: 10px;
+        border-radius: 2px;
+    }
+    .sec3 span {
+        padding: 2px;
+        margin: 2px;
+        border-radius: 2px;
+    }
+    .sec4 {
+        padding: 5px;
+        margin: 2px;
+        border-radius: 4px;
+    }
+    .sec4 div {
+        padding: 5px;
+        margin: 2px;
+        border-radius: 4px;
+    }
+    .sec4 a img {
+        width: 7px;
+        height: 7px;
+        margin: 1px;
+        border-radius: 2px;
+    }
+    footer section {
+        padding: 5px;
+        margin: 2px;
+        border-radius: 4px;
+    }
+    .sticky {
+        height: -moz-fit-content;
+        height: fit-content;
+        padding: 1px;
     }
 }
