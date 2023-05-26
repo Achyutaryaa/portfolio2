@@ -20,30 +20,38 @@
 header {
     width: 100%;
     height: 180px;
-    background-color: rgb(143, 214, 107);
+    /* background-color: rgb(155, 107, 214); */
+    background-image: linear-gradient(to right, rgb(155, 107, 214), rgb(227, 117, 117));
 }
 
 
 
 main {
     width: 100%;
-    background-color: rgb(118, 191, 215);
+    /* background-color: rgb(118, 191, 215); */
+    background-image: linear-gradient(rgb(71, 221, 148), rgb(46, 226, 208));
 }
 .main {
     margin-top: 100px;
 }
 section {
-    background-color: rgb(171, 216, 216);
+    /* background-color: rgb(171, 216, 216); */
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
 }
+main section {
+    background-image: linear-gradient(to right top, rgb(208, 225, 225), rgb(166, 140, 245) 80%);
+}
 
 section div {
-    background-color: rgb(125, 167, 244);
+    /* background-color: rgb(125, 167, 244); */
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
+}
+main div {
+    background-image: linear-gradient(to right, rgb(128, 131, 134), rgb(110, 139, 165));
 }
 .sec1 img {
     width: 500px;
@@ -92,6 +100,7 @@ footer section {
     margin: 20px;
     border-radius: 20px;
     background-color: rgb(86, 85, 85);
+    background-image: linear-gradient(to right, rgb(57, 56, 56), rgb(103, 79, 79));
     padding: 20px;
 }
 footer h2::first-letter {
@@ -112,13 +121,15 @@ footer h2::first-letter {
     width: 100%;
     height: 100%;
 }
-
 .name {
     width: 85%;
     height: 60%;
     font-size: 80px;
     text-align: center;
-    float: right;
+    float: right;   
+}
+.name::first-letter {
+    color: red;
 }
 
 /* -------------------------------- */
@@ -162,6 +173,7 @@ footer h2::first-letter {
     width: 100%;
     height: fit-content;
     background-color: tomato;
+    background-image: linear-gradient(to right, rgb(155, 107, 214), rgb(227, 117, 117));
     margin: 0;
     z-index: 5;
 }
@@ -306,7 +318,7 @@ footer h2::first-letter {
     }
     .name {
         font-size: 35px;
-        height: 60%;
+        height: 58%;
     }
     .navs-btn a {
         font-size: 15px;
@@ -323,7 +335,7 @@ footer h2::first-letter {
         height: 90px;
     }
     .logo-area {
-        height: 60%;
+        height: 58%;
         margin: 5px 0 0 5px;
     }
     .logo {
@@ -331,9 +343,10 @@ footer h2::first-letter {
         border-radius: 50%;
     }
     .name {
-        font-size: 30px;
-        height: 70%;
-        width: 70%;
+        font-size: 28px;
+        height: 65%;
+        width: 80%;
+        padding-top: 5px;
         float: left;
         text-align: center;
         margin-left: 4px;
