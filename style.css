@@ -108,6 +108,10 @@ footer h2::first-letter {
     font-size: 1.5em;
     font-style: italic;
 }
+footer h6 {
+    text-align: center;
+    color: rgb(174, 173, 173);
+}
 /* Gloabal end */
 /* ============================================================================================ */
 /* Header decoration */
