@@ -1,4 +1,3 @@
-
 /* Global start */
 * {
     margin: 0;
@@ -6,6 +5,7 @@
     box-sizing: border-box;
     /* border: 1px solid red; */
 }
+
 .flotar {
     float: left;
 }
@@ -13,6 +13,7 @@
 .pad {
     padding: 10px;
 }
+
 .font {
     font-size: 25px;
 }
@@ -31,15 +32,18 @@ main {
     /* background-color: rgb(118, 191, 215); */
     background-image: linear-gradient(rgb(71, 221, 148), rgb(46, 226, 208));
 }
+
 .main {
     margin-top: 100px;
 }
+
 section {
     /* background-color: rgb(171, 216, 216); */
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
 }
+
 main section {
     background-image: linear-gradient(to right top, rgb(208, 225, 225), rgb(166, 140, 245) 80%);
 }
@@ -50,9 +54,11 @@ section div {
     padding: 20px;
     border-radius: 20px;
 }
+
 main div {
     background-image: linear-gradient(to right, rgb(128, 131, 134), rgb(110, 139, 165));
 }
+
 .sec1 img {
     width: 500px;
     border-radius: 20px;
@@ -94,6 +100,7 @@ footer {
     width: 100%;
     background-color: gray;
     color: #fff;
+    font-family: goloria hallelujah;
 }
 
 footer section {
@@ -103,15 +110,18 @@ footer section {
     background-image: linear-gradient(to right, rgb(57, 56, 56), rgb(103, 79, 79));
     padding: 20px;
 }
+
 footer h2::first-letter {
     color: red;
     font-size: 1.5em;
     font-style: italic;
 }
+
 footer h6 {
     text-align: center;
     color: rgb(174, 173, 173);
 }
+
 /* Gloabal end */
 /* ============================================================================================ */
 /* Header decoration */
@@ -125,13 +135,15 @@ footer h6 {
     width: 100%;
     height: 100%;
 }
+
 .name {
     width: 85%;
     height: 60%;
     font-size: 80px;
     text-align: center;
-    float: right;   
+    float: right;
 }
+
 .name::first-letter {
     color: red;
 }
@@ -172,6 +184,7 @@ footer h6 {
     background-color: #fff;
     color: #5120cf;
 }
+
 .sticky {
     position: fixed;
     width: 100%;
@@ -181,61 +194,77 @@ footer h6 {
     margin: 0;
     z-index: 5;
 }
+
 .sticky-padding {
     padding-top: 100px;
 }
+
 .margin-top {
     margin-top: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 /* ================================================= */
 /* Responsive Design */
-@media screen and (max-width:2000) {
-    
-}
+@media screen and (max-width:2000) {}
+
 @media screen and (max-width:1150px) {
     header {
         height: 160px;
     }
 }
+
 @media screen and (max-width:1000px) {
     header {
         height: 150px;
     }
+
     .name {
         font-size: 70px;
     }
 }
+
 @media screen and (max-width:900px) {
     header {
         height: 140px;
     }
+
     .name {
         font-size: 65px;
         height: 60%;
     }
+
     .navs-btn a {
         font-size: 25px;
     }
 }
+
 @media screen and (max-width:800px) {
     header {
         height: 130px;
     }
+
     .name {
         font-size: 60px;
     }
+
     .navs-btn a {
         font-size: 25px;
     }
 }
+
 @media screen and (max-width:750px) {
     header {
         height: 120px;
     }
+
     .name {
         font-size: 50px;
         height: 60%;
     }
+
     .navs-btn a {
         padding: 7px;
         margin: 0 16px;
@@ -248,47 +277,57 @@ footer h6 {
     .font {
         font-size: 19px;
     }
+
     header {
         height: 100px;
     }
+
     .logo-area {
         height: 100%;
         width: 15%;
     }
+
     .logo {
         height: 100%;
         width: 100%;
     }
+
     .name {
         width: 80%;
         font-size: 45px;
         height: 60%;
         float: left;
     }
+
     .navbar {
         width: 85%;
     }
-    
+
     .navs-btn a {
         font-size: 20px;
         padding: 5px;
         border-radius: 5px;
     }
+
     section {
         padding: 15px;
         margin: 15px;
         border-radius: 15px;
     }
-    section div, footer section {
+
+    section div,
+    footer section {
         padding: 15px;
         margin: 15px;
         border-radius: 10px;
     }
+
     .sec1 img {
         max-width: 100%;
         margin-top: 15px;
         border-radius: 15px;
     }
+
     .sec4 a img {
         height: 40px;
         width: 40px;
@@ -301,13 +340,16 @@ footer h6 {
     header {
         height: 90px;
     }
+
     .name {
         font-size: 40px;
         height: 58%;
     }
+
     .navs-btn a {
         font-size: 18px;
     }
+
     .sec3 span {
         font-size: 22px;
     }
@@ -317,13 +359,16 @@ footer h6 {
     .font {
         font-size: 18px;
     }
+
     header {
         height: 80px;
     }
+
     .name {
         font-size: 35px;
         height: 58%;
     }
+
     .navs-btn a {
         font-size: 15px;
         margin: 0 10px;
@@ -331,21 +376,25 @@ footer h6 {
 }
 
 
- @media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .font {
         font-size: 16px;
     }
+
     header {
         height: 90px;
     }
+
     .logo-area {
         height: 58%;
         margin: 5px 0 0 5px;
     }
+
     .logo {
         height: 100%;
         border-radius: 50%;
     }
+
     .name {
         font-size: 28px;
         height: 65%;
@@ -355,6 +404,7 @@ footer h6 {
         text-align: center;
         margin-left: 4px;
     }
+
     .navbar {
         height: 30%;
         width: 100%;
@@ -362,91 +412,106 @@ footer h6 {
         padding: 0;
         float: right;
     }
+
     .navs-btn {
         width: 100%;
         margin: 0;
     }
-    
+
     .navs-btn a {
         font-size: 18px;
         padding: 5px;
         font-size: 14px;
         border-radius: 5px;
         margin: 0 auto;
-        
+
     }
+
     section {
         margin: 5px;
         padding: 10px;
     }
+
     section div {
         margin: 5px;
         padding: 10px;
         border-radius: 10px;
     }
+
     .about-img {
         max-width: 100%;
         border-radius: 10px;
     }
-    
+
     .sec3 div {
         border: 2px solid greenyellow;
     }
+
     .sec3 span {
         font-size: 20px;
     }
+
     footer section {
         margin: 10px;
         padding: 10px;
         border-radius: 10px;
     }
+
     /* sticky area. Write above. */
     .sticky {
         height: -moz-fit-content;
         height: fit-content;
         padding: 0;
     }
-    
- }
 
- @media screen and (max-width: 352px) {
+}
+
+@media screen and (max-width: 352px) {
     .navs-btn a {
         font-size: 12px;
     }
- }
+}
 
- @media screen and (max-width:336px) {
+@media screen and (max-width:336px) {
     .font {
         font-size: 16px;
     }
+
     .name {
         font-size: 25px;
         padding-top: 12px;
     }
+
     .navs-btn a {
         font-size: 10px;
     }
- }
+}
 
- @media screen and (max-width: 280px) {
+@media screen and (max-width: 280px) {
     header {
         height: 80px;
     }
+
     .font {
         font-size: 12px;
     }
+
     .name {
         font-size: 20px;
     }
+
     .navs-btn a {
         font-size: 9px;
     }
+
     .pad {
         padding: 5px;
     }
+
     main section {
         padding: 5px;
     }
+
     .sec3 span {
         font-size: 13px;
     }
@@ -455,38 +520,48 @@ footer h6 {
         width: 25px;
         height: 25px;
     }
- }
+}
 
- @media screen and (max-width: 250px) {
+@media screen and (max-width: 250px) {
     .pad {
         padding: 3px;
     }
+
     .font {
         font-size: 12px;
     }
+
     header {
         height: 70px;
     }
+
     .logo-area {
         height: 50%;
     }
+
     .name {
         padding-top: 10px;
         height: 50%;
     }
+
     .navs-btn {
         padding: 0;
     }
+
     .navs-btn a {
         font-size: 8px;
     }
-    main, footer {
+
+    main,
+    footer {
         font-size: 10px;
         background-color: lightseagreen;
     }
+
     .sec3 span {
         font-size: 10px;
     }
+
     .sec4 a img {
         width: 20px;
         height: 20px;
@@ -494,211 +569,254 @@ footer h6 {
         margin: 9px;
         border-radius: 4px;
     }
+
     .sticky {
         height: -moz-fit-content;
         height: fit-content;
         padding: 5px 0;
     }
- }
+}
 
- @media screen and (max-width: 235px) {
+@media screen and (max-width: 235px) {
     .font {
         font-size: 8px;
     }
+
     .logo-area {
         height: 50%;
         margin-top: 0;
     }
+
     .name {
         font-size: 17px;
         height: 50%;
         width: 80%;
     }
+
     .navbar {
         height: 50%;
     }
-    
+
     .navs-btn a {
         font-size: 8px;
     }
-    main, footer {
+
+    main,
+    footer {
         font-size: 7px;
     }
+
     .sticky {
         height: -moz-fit-content;
         height: fit-content;
     }
- }
+}
 
- @media screen and (max-width: 200px) {
+@media screen and (max-width: 200px) {
     .font {
         font-size: 7px;
     }
+
     header {
         height: 60px;
     }
+
     .logo-area {
         height: 60%;
-        
+
     }
+
     .name {
         font-size: 14px;
         width: 70%;
     }
+
     .navbar {
         height: 40%;
     }
+
     .navs-btn a {
         padding: 3px;
         border-radius: 3px;
     }
+
     .pad {
         padding: 1px;
     }
-    main, footer {
+
+    main,
+    footer {
         font-size: 7px;
     }
+
     section {
         border-radius: 10px;
     }
+
     .sec3 span {
         font-size: 7px;
         border: none;
     }
+
     .sticky {
         height: -moz-fit-content;
         height: fit-content;
-        padding: 3px ;
+        padding: 3px;
     }
- }
+}
 
 
 @media screen and (max-width: 150px) {
     .font {
         font-size: 5px;
     }
+
     header {
         min-height: 40px;
     }
+
     .logo-area {
         margin-left: 2px;
     }
+
     .name {
         font-size: 10px;
     }
-    
+
     .navs-btn a {
         padding: 2px;
         border-radius: 2px;
     }
+
     .sec1 img {
         margin-top: 5px;
         border-radius: 5px;
     }
+
     .sec2 div {
         border-radius: 5px;
     }
+
     .sec3 div {
         padding: 4px;
         margin: 3px;
         border-radius: 4px;
         border: 1px solid greenyellow;
     }
+
     .sec3 span {
         padding: 3px;
         margin: 3px;
         border-radius: 2px;
         font-size: 4px;
     }
+
     .sec4 div {
         padding: 3px;
         margin: 3px;
         border-radius: 3px;
     }
+
     .sec4 a img {
         width: 8px;
         height: 8px;
         margin: 1px;
         border-radius: 2px;
     }
+
     footer section {
         padding: 5px;
         margin: 5px;
         border-radius: 5px;
     }
-    
+
 }
 
 @media screen and (max-width:130px) {
     .font {
         font-size: 6px;
     }
+
     header {
         height: 30px;
     }
+
     .name {
         font-size: 9px;
         padding-top: 5px;
     }
+
     .navs-btn a {
         font-size: 5px;
         padding: 2px;
         border-radius: 2px;
     }
+
     .sec1 {
         padding: 3px;
         margin: 2px;
         border-radius: 3px;
     }
+
     .sec1 img {
         border-radius: 2px;
     }
+
     .sec2 {
         padding: 3px;
         margin: 2px;
         border-radius: 3px;
     }
+
     .sec2 div {
         border-radius: 2px;
     }
+
     .sec3 {
         padding: 3px;
         margin: 3px;
         border-radius: 3px;
     }
+
     .sec3 div {
         padding: 4px;
         margin: 3px;
         border-radius: 3px;
         border: 1px solid greenyellow;
     }
+
     .sec3 span {
         padding: 3px;
         margin: 3px;
         border-radius: 3px;
         font-size: 5px;
     }
+
     .sec4 {
         padding: 3px;
         margin: 2px;
         border-radius: 3px;
     }
+
     .sec4 div {
         padding: 3px;
         margin: 3px;
-        border-radiuss: 3px;
+        border-radius: 3px;
     }
+
     .sec4 a img {
         width: 8px;
         height: 8px;
         margin: 1px;
         border-radius: 4px;
     }
+
     footer section {
         padding: 3px;
         margin: 3px;
         border-radius: 3px;
     }
+
     .sticky {
         height: -moz-fit-content;
         height: fit-content;
@@ -710,77 +828,93 @@ footer h6 {
     .font {
         font-size: 5px;
     }
+
     header {
         height: 20px;
     }
+
     .logo-area {
         height: 50%;
         width: 20%;
     }
+
     .name {
         font-size: 6px;
         margin: 0;
     }
+
     .navs-btn a {
         font-size: 4px;
         padding: 1px;
         border-radius: 1px;
     }
+
     .sec1 {
         padding: 5px;
         margin: 2px;
         border-radius: 4px;
     }
+
     .sec1 img {
         border-radius: 2px;
     }
+
     .sec2 {
         padding: 5px;
         margin: 2px;
         border-radius: 4px;
     }
+
     .sec2 div {
         padding: 5px;
         margin: 2px;
         border-radius: 4px;
     }
+
     .sec3 {
         padding: 5px;
         margin: 2px;
         border-radius: 4px;
     }
+
     .sec3 div {
         padding: 2px;
         margin: 2px;
         height: 10px;
         border-radius: 2px;
     }
+
     .sec3 span {
         padding: 2px;
         margin: 2px;
         border-radius: 2px;
     }
+
     .sec4 {
         padding: 5px;
         margin: 2px;
         border-radius: 4px;
     }
+
     .sec4 div {
         padding: 5px;
         margin: 2px;
         border-radius: 4px;
     }
+
     .sec4 a img {
         width: 7px;
         height: 7px;
         margin: 1px;
         border-radius: 2px;
     }
+
     footer section {
         padding: 5px;
         margin: 2px;
         border-radius: 4px;
     }
+
     .sticky {
         height: -moz-fit-content;
         height: fit-content;
